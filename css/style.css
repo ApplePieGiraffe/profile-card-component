@@ -21,6 +21,8 @@ html {
 }
 
 body {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,7 +41,25 @@ body {
   font-size: 2.25rem;
 }
 
+.container {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120rem;
+  height: 80rem;
+}
+
 .card {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   border-radius: 2rem;
   background-color: white;
   -webkit-box-shadow: 0 2rem 8rem rgba(0, 0, 0, 0.2);
@@ -66,6 +86,8 @@ body {
   margin-bottom: 3rem;
   border: 5px solid white;
   border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .card__middle__title {
@@ -76,6 +98,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.25rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
 .card__middle__title h1 {
